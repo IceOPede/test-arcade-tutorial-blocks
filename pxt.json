@@ -11,7 +11,8 @@
         "assets.json",
         "tutorial.md",
         "tilemap.g.jres",
-        "tilemap.g.ts"
+        "tilemap.g.ts",
+        "tutorial_js.md"
     ],
     "testFiles": [
         "test.ts"
