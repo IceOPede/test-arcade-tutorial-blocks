@@ -51,6 +51,34 @@ controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 ```
 
+## Hindernisse erstellen
+in noch mehr parts
+
+- interval
+- bild
+- projectiles
+- projectile placements
+- randomize projectiles
+
+Um die Hindernisse zu erstellen werden wir diese als projektil erstellen, auch zufinden unter ``||sprites:Sprites||`` aber dann ``||sprites:set topProjektil to||``
+
+Diese projektil werden wir in einem interval erstellen. Damit nicht alle auf einmal auf dem Bildschirm auftauchen. Unter ``||game:Game||`` findet ihr ``||game:on game update on every||``. 
+Fügt die neu erstellten Projektile in diesen block ein.
+
+
+ ```blocks
+// @highlight
+game.onUpdateInterval(1500, function () {
+    topImage = img``
+    bottomImage = img``
+
+    topProjectile = sprites.createProjectileFromSide(topImage, -45, 0)
+    topProjectile.top = 0
+    bottomProjectile = sprites.createProjectileFromSide(bottomImage, -45, 0)
+    bottomProjectile.bottom = scene.screenHeight()
+})
+```
+
 ## Step 2
 
 Test 2
