@@ -6,7 +6,7 @@
 
 ## Hintergrund zeichnen
 
-Zu beginnen zeichnen wir einen Hintergund öffne ``||scene||`` und wähle``||scene:set background image||`` aus und ziehe es in den editor.
+Zu beginnen zeichnen wir einen Hintergund öffne ``||scene:Scene||`` und wähle``||scene:set background image||`` aus und ziehe es in den editor.
 Auf der linken seite findest du ein icon wähle dieses aus um ein bild aus denn ressourcen zu wählen.
 
 Drücke auf **next** um fortzufahren.
@@ -17,7 +17,7 @@ scene.setBackgroundImage(img``)
 
 ## Spieler erstellen
 
-Um den Spieler zu erstellen wählen wir aus den ``||sprites||`` die option um einen spieler zu erstellen mit ``||sprites:set spieler to||``
+Um den Spieler zu erstellen wählen wir aus den ``||sprites:Sprites||`` die option um einen spieler zu erstellen mit ``||sprites:set spieler to||``
 Diesem Spieler kann man wie mit dem hintergrund ein bild hinzufügen.
 
 ```blocks
@@ -28,8 +28,8 @@ let spieler = sprites.create(img``, SpriteKind.Player)
 
 ## Player fallen lassen
 
-Damit der Spieler nun auch fallen kann und nicht aus dem bildschirm fällt kann finded man in ``||sprites||`` die optionen 
-``||sprites:set spieler ay to||`` und ``||sprites:set myPlayer stay in screen||``
+Damit der Spieler nun auch fallen kann und nicht aus dem bildschirm fällt kann finded man in ``||sprites:Sprites||`` die optionen 
+``||sprites:set spieler ay to||`` und ``||sprites:set spieler stay in screen||``
 
 ```blocks
 scene.setBackgroundImage(img``)
@@ -38,6 +38,17 @@ let spieler = sprites.create(img``, SpriteKind.Player)
 spieler.ay = 300
 // @highlight
 spieler.setStayInScreen(true)
+```
+
+## Spieler kontrollieren
+
+Um den Spieler fligen zu lassen öffne ``||controller:Controller||`` und wähle ``||controller:on any button pressed||`` damit falls ein beliebiger Knopf gedrückt wird der spieler fliegt
+In diesem Ereignis werden wir die geschwindigkeit um 100 reduzieren ``||sprites:set spieler vy to||``
+
+```blocks
+controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
+    spieler.vy = -100
+})
 ```
 
 ## Step 2
