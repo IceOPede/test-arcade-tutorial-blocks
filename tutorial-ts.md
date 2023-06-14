@@ -1,4 +1,4 @@
-# Block Game Tutorial
+# Js Game Tutorial
 
 ## Intro @showdialog
 
