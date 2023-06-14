@@ -12,7 +12,7 @@
         "tutorial.md",
         "tilemap.g.jres",
         "tilemap.g.ts",
-        "tutorial_js.md"
+        "tutorial-ts.md"
     ],
     "testFiles": [
         "test.ts"
