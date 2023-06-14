@@ -2,7 +2,7 @@
 
 ## Step 1
 
-TEST 1
+TEST 2
 
 Go get a ``||variables(sprites):set mySprite to||`` block from ``||sprites:Sprites||``
 
