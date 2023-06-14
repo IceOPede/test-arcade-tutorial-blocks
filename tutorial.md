@@ -2,7 +2,7 @@
 
 ## Step 1
 
-TEST 4
+TEST 6
 
 Set background ``||scene:set background image||`` to a new image.
 
