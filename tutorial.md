@@ -2,7 +2,7 @@
 
 ## Step 1
 
-TEST 3
+TEST 4
 
 Set background ``||scene:set background image||`` to a new image.
 
@@ -133,7 +133,7 @@ scene.setBackgroundImage(img`
     ................................................................................................................................................................
     ................................................................................................................................................................
     `)
-let myPlayer = sprites.create(img`
+let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -151,8 +151,8 @@ let myPlayer = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-myPlayer.ay = 300
-myPlayer.setStayInScreen(true)
+mySprite.ay = 0
+mySprite.setStayInScreen(true)
 ```
 
 ## Step 2
